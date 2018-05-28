@@ -30,3 +30,5 @@ var Num ={
             return count;
     }
 }
+
+//edited
