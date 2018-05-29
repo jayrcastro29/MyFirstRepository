@@ -30,6 +30,22 @@ var Num ={
             return count;
     }
 }
+
+var Substring={
+    LongestSubs:function(){
+
+        var s = "azcbobobegghakl";
+        var sublength = 0;
+
+        for( x=0; x< s.length; x++){   
+               while(s[x]<=s[x+1]){
+                sublength=sublength+1;
+               }
+        }
+
+    console.log(`Longest substring in alphabetical order is: ${sublength}`);
+   }
+}
 //dajfhakjfhsdkjhfkj
 //edited
 //edit
