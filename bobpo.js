@@ -35,27 +35,24 @@ let Num ={
 
 let Substrings = {
     LongestSub(){
-        var s = "azcbobobegghakl"
-        var sliced;
-        var temp = 0;
-        var start, end;
+        const s = 'azcbobobegghakl'
+        let sliced, temp = 0, start, end, counter, i;
+
         for(x=0; x<s.length; x++){
-             var counter = 1;
-             i=x;
-            while(s[i]<=s[i+1]){
-                if(s[x]<= s[x+1]){
+              counter = 1; // initialize
+              i=x;
+            while(s[i]<=s[i+1]){ //Loop as long as the letters are still in alphabetical order
                     counter += 1;
                     if(counter>temp){
-                    temp=counter;
-                    start = x;
+                    temp=counter; //gets the length of the longest alphabetically ordered letters...
+                    start = x; //gets the index of the first letter in the longest alphabetically ordered letters...
                     }
-                }
             i++;
             }
         }
-        end = temp+ start;
-        sliced = s.slice(start,end)
-     console.log(sliced);
+        end = temp+start; 
+        console.log(s.slice(start,end));
+ 
     }
 }
 
