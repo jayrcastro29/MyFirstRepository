@@ -1,5 +1,5 @@
 let Num ={
-    NumOfBob(){
+    NumOfBob () {
             var string = "Hello World";
             console.log(string);
 
@@ -12,7 +12,7 @@ let Num ={
 
     },
 
-    counter(a,b){
+    counter (a,b) {
            var count = 0
             for(x= 0 ; x<b; x++)
             {
@@ -34,7 +34,7 @@ let Num ={
 
 
 let Substrings = {
-    LongestSub(){
+    LongestSub () {
         const s = 'azcbobobegghakl'
         let sliced, temp = 0, start, end, counter, i;
 
@@ -55,6 +55,7 @@ let Substrings = {
  
     }
 }
+
 
 
 //dajfhakjfhsdkjhfkj
